@@ -6,9 +6,19 @@
   </ion-header>
 
   <ion-content>
+    <img src="assets/img/menu.jpg"/>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+      <button menuClose ion-item (click)="openPage(tastingsPage)">
+        <ion-icon name="ios-list-box-outline" item-left></ion-icon>
+        Degustationen
+      </button>
+      <button menuClose ion-item (click)="openPage(top10Page)">
+        <ion-icon name="ios-ribbon-outline" item-left></ion-icon>
+        Top 10
+      </button>
+      <button menuClose ion-item (click)="openPage(infoPage)">
+        <ion-icon name="ios-information-circle-outline" item-left></ion-icon>
+        Infos
       </button>
     </ion-list>
   </ion-content>
